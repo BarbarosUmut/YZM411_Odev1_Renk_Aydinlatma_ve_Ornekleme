@@ -1,0 +1,2 @@
+# YZM411_Odev1_Renk_Aydinlatma_ve_Ornekleme
+Notebook, sabit kamerayla üç farklı ışıkta (normal, gölge, lamba) çekilmiş kırmızı bir oyuncak arabanın fotoğrafları üzerinde dört deney yürütür: görüntünün sayısal yapısı (D4), sabit RGB/HSV renk eşikleri (D5), parlaklık kaydırma ve gama (D6), 1/4 küçültme (D7). Kod baştan sona tek ayar hücresine bağlı, tahmin yazılmadan deneyi çalıştırmayan ve bütün ölçümleri CSV/JSON olarak kaydeden, tekrarlanabilir bir yapıdadır.
