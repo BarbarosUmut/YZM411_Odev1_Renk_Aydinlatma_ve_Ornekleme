@@ -1,0 +1,11 @@
+deney,degisken,tahmin,olcum,tuttu_mu
+D5 renk eşiği,"RGB maske alan oranı, normal → golge",azalır,%0.14 → %0.00 (azalır),evet
+D5 renk eşiği,"RGB maske alan oranı, normal → lamba",artar,%0.14 → %0.14 (aynı),hayır
+D5 renk eşiği,"HSV maske alan oranı, normal → golge",azalır,%0.34 → %0.09 (azalır),evet
+D5 renk eşiği,"HSV maske alan oranı, normal → lamba",artar,%0.34 → %1.48 (artar),evet
+D6 parlaklık/gama,b=+40 ortalama değişimi,+60.0,+37.10 (70.88 → 107.98),hayır
+D6 parlaklık/gama,γ=0.5 ortalama değişimi,+65.0,+29.67 (70.88 → 100.55),hayır
+D6 parlaklık/gama,γ=2.0 ortalama değişimi,-60.0,-20.94 (70.88 → 49.94),hayır
+D7 küçültme,nearest (1/4 → özgün boyut): MAE / kontrast / kenar,metin (0.2),19.0 / 35.96 / 10.98,raporda
+D7 küçültme,area (1/4 → özgün boyut): MAE / kontrast / kenar,metin (0.2),13.9 / 28.08 / 7.43,raporda
+D7 küçültme,area+cubic (1/4 → özgün boyut): MAE / kontrast / kenar,metin (0.2),13.27 / 26.91 / 8.1,raporda

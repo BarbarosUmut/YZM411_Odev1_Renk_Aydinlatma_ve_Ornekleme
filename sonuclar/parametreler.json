@@ -1,0 +1,156 @@
+{
+  "ortam": {
+    "calistirma_zamani": "2026-11-10T18:44:04",
+    "python": "3.13.18",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "numpy": "2.4.6",
+    "opencv": "5.0.0",
+    "matplotlib": "3.10.0",
+    "pandas": "2.2.3"
+  },
+  "kamera_notu": {
+    "cihaz": "SAMSUNG S20 FE, arka kamera, 12 MP",
+    "otomatik_pozlama": false,
+    "otomatik_beyaz_dengesi": false,
+    "aciklama": "Pro modda ISO 200, 26mm, 0.0v, F1.8, 1/30 s, WB 5000K kilitlendi",
+    "isik_kosullari": {
+      "normal": "",
+      "golge": "",
+      "lamba": ""
+    }
+  },
+  "girdiler": {
+    "normal": {
+      "dosya": "veri/normal.jpg",
+      "sha256": "4bdb9388c97cf3ee0b8de7c6cac4e532b39e3ecae8c156907902263fde987ec8",
+      "boyut_HxWxC": [
+        4032,
+        3024,
+        3
+      ]
+    },
+    "golge": {
+      "dosya": "veri/golge.jpg",
+      "sha256": "ba5ae4af02a853f8010a78e42262620734fef86425f5404cc914c6b4b5b17e0f",
+      "boyut_HxWxC": [
+        4032,
+        3024,
+        3
+      ]
+    },
+    "lamba": {
+      "dosya": "veri/lamba.jpg",
+      "sha256": "dbcff1b57f96860197353bb9b8b5f74ce53bc9ce7b80836525a4c1e85a30c9b5",
+      "boyut_HxWxC": [
+        4032,
+        3024,
+        3
+      ]
+    }
+  },
+  "koordinatlar": {
+    "PIKSELLER": [
+      [
+        1560,
+        1100
+      ],
+      [
+        1565,
+        1150
+      ],
+      [
+        1570,
+        1200
+      ]
+    ],
+    "NESNE_ROI": [
+      1540,
+      1080,
+      50,
+      100
+    ],
+    "NESNE_KUTU": [
+      1468,
+      897,
+      240,
+      450
+    ],
+    "KAGIT_ROI": [
+      2200,
+      1800,
+      200,
+      200
+    ],
+    "YAZI_ROI": [
+      650,
+      950,
+      400,
+      400
+    ],
+    "YAZI_HARF_YUKSEKLIGI_PX": 8
+  },
+  "esikler": {
+    "kaynak": "normal fotoğraftaki NESNE_ROI yüzdeliklerinden otomatik",
+    "RGB": {
+      "R": [
+        168,
+        255
+      ],
+      "G": [
+        0,
+        13
+      ],
+      "B": [
+        0,
+        55
+      ]
+    },
+    "HSV": {
+      "H": [
+        169,
+        179
+      ],
+      "S": [
+        241,
+        255
+      ],
+      "V": [
+        60,
+        255
+      ]
+    },
+    "imza": "6860b7c3",
+    "yuzdelik": [
+      2,
+      98
+    ],
+    "pay": 10,
+    "pay_H": 4,
+    "V_alt": 60
+  },
+  "donusum": {
+    "b": 40,
+    "gamalar": [
+      0.5,
+      2.0
+    ],
+    "olcek": 4
+  },
+  "tahminler": {
+    "D4_sayisal_yapi": "Telefon JPG’si 8 bit kaydedildiği için dizi (H, W, 3) boyutunda (1024, 768, 3), uint8 türünde ve 0–255 aralığında olacak.\n                            Sarı/kırmızımsı lambada kırmızı oyuncak arabanın R kanalı zaten nesneyle aynı dalga boyunda olduğu için yüksek kalacak\n                            ancak G ve B kanalları çok daha fazla düşecek; ayrıca lambanın sıcak ışığı beyaz kağıt ve masa yüzeyindeki R değerlerini de artırarak\n                            araba ile arka plan arasındaki R farkını azaltacak.",
+    "D5_renk_esikleri": "Gölgede üç kanal birlikte düşeceği için arabanın R değeri sabit RGB eşiğinin alt sınırının altına inecek ve RGB maskesi büyük ölçüde boşalacak.\n                            HSV uzayında kırmızı renk 0/179 ton (Hue) sınırında ikiye bölündüğü için tek bir dar aralık kullanılırsa normalde bile piksellerin bir kısmı kaçabilir;\n                            gölgede parlaklık düşse de ton korunduğu için HSV maskesi RGB'ye göre daha az küçülecek. Ancak lambanın ışığı nesneyle aynı tonda olduğundan,\n                            lamba altında beyaz kağıt ve masa yansıması da kırmızı/turuncu tona kayıp HSV eşiğine girecek; bu yüzden lamba altında HSV maskesi küçülmek yerine\n                            arka planı da kapsayarak büyüyecek veya yüksek doygunlukla arabanın tamamını tutmaya devam edecek.",
+    "D6a_parlaklik_b40": "b = +40: “Ortalama 71'den 111'e çıkmalı; görüntünün büyük kısmı koyu masa yüzeyi olduğu için kırpılma az olacak,\n                            sadece sağdaki beyaz kağıdın 255'e yakın pikselleri kırpılacağı için artış 40'ın biraz altında, yaklaşık +37 olacak (ölçülen yeni ortalama ≈ 108).",
+    "D6b_gama_0_5": "γ = 0,5: “Formüle göre 255 * (71/255)^{0,5} = 134 olduğu için ortalamanın yaklaşık +63 artmasını bekleriz;\n                            ancak görüntünün çoğu çok koyu piksellerden ve bir kısmı parlak beyaz kağıttan oluştuğu için iki uçtaki pikseller orta tonlar\n                            kadar artmayacak ve gerçek ortalama artışı daha düşük çıkacak.",
+    "D6c_gama_2_0": "γ = 2,0: “Formüle göre 255 * (71/255)^2 = 20 olduğu için ortalamanın yaklaşık −51 düşmesi beklenir;\n                            fakat ortalamanın gaması ile gamanın ortalaması aynı şey olmadığından ve görüntünün %60'ı zaten 0'a çok yakın koyu piksellerden oluşup\n                            daha fazla kararamayacağından gerçek düşüş daha az çıkacak.",
+    "D7_kucultme": "Fişteki küçük harfler yaklaşık 6–8 piksel yüksekliğinde; 1/4 küçültmede 1,5–2 piksele inip tamamen okunamaz olacak.\n                            NEAREST harflerin ince çizgilerini koparıp kesik noktalara çevirecek, AREA ise komşu piksellerin ortalamasını alarak\n                            satırları bulanık gri şeritlere dönüştürecek. Tekrar büyütme iki durumda da harfleri geri getirmeyecek,\n                            çünkü her 16 pikselin yerinde artık tek bir değer kaldı."
+  },
+  "tahmin_sayisal": {
+    "ortalama_degisim_b40": 60,
+    "ortalama_degisim_gama_0_5": 65,
+    "ortalama_degisim_gama_2_0": -60,
+    "rgb_oran_golge": "azalır",
+    "rgb_oran_lamba": "artar",
+    "hsv_oran_golge": "azalır",
+    "hsv_oran_lamba": "artar"
+  }
+}

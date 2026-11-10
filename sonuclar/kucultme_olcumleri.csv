@@ -1,0 +1,5 @@
+goruntu,boyut,MAE_ozgune,kontrast_std,kenar_enerjisi
+özgün kesit,400x400,0.0,36.68,24.01
+nearest (1/4 → özgün boyut),100x100 → 400x400,19.0,35.96,10.98
+area (1/4 → özgün boyut),100x100 → 400x400,13.9,28.08,7.43
+area+cubic (1/4 → özgün boyut),100x100 → 400x400,13.27,26.91,8.1

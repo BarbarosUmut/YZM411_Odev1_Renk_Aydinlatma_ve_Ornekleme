@@ -1,0 +1,4 @@
+fotograf,dosya,H,W,C,dtype,min,max,ortalama,sha256
+normal,normal.jpg,4032,3024,3,uint8,0,255,70.88,4bdb9388c97cf3ee
+golge,golge.jpg,4032,3024,3,uint8,0,255,41.82,ba5ae4af02a853f8
+lamba,lamba.jpg,4032,3024,3,uint8,0,255,35.46,dbcff1b57f968601
